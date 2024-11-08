@@ -1,0 +1,149 @@
+.user-panel {
+  padding: 20px 150px;
+  background-color: #fff;
+
+  .headerForm {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    h2 {
+      margin-bottom: 10px;
+      font-weight: 400;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .icon {
+      font-size: 28px;
+      color: #333;
+    }
+  }
+
+  .after-line {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0 20px;
+  }
+
+  .header-row {
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    h3 {
+      margin: 0;
+      font-weight: 400;
+    }
+
+    p {
+      margin: 10px 0 0;
+      color: #555;
+    }
+  }
+
+  .new-client-btn {
+    background-color: #e29932;
+    border: 2px solid;
+    padding: 8px 12px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+  }
+
+  .user-list {
+    list-style: none;
+    padding: 0;
+
+    .user-item {
+      margin-bottom: 20px;
+
+      .user-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 20px;
+      }
+
+      .user-column {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+
+        h4 {
+          margin: 0;
+        }
+
+        p {
+          margin: 5px 0;
+          color: #555;
+        }
+      }
+
+      .user-column:nth-child(1) {
+        width: 120%;
+      }
+      .user-column:nth-child(3) {
+        width: 57%;
+      }
+      .user-column:nth-child(4) {
+        display: flex;
+        justify-content: flex-end;
+        width: 75%;
+        flex-direction: row;
+        padding-right: 20px;
+      }
+
+      .status {
+        display: inline-block;
+        font-size: 0.9rem;
+
+        &.active {
+          color: green;
+        }
+
+        &.inactive {
+          color: red;
+        }
+
+        &.pending {
+          color: orange;
+        }
+
+        &.disabled {
+          color: gray;
+        }
+      }
+
+      .edit-btn {
+        background-color: #fff;
+        border: 2px solid #e29932;
+        padding: 10px 35px;
+        color: #e29932;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover {
+          background-color: #e29932;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .footer-info {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+}
